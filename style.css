@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #222;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #222;
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1rem;
+}
+
+/* Main */
+
+main {
+    flex: 1;
+    width: 100%;
+}
+
+.dog-section {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+/* Dog Card */
+
+.dog-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Image */
+
+.image-container {
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+#message {
+    font-size: 1rem;
+    color: #666;
+}
+
+#dog-image {
+    display: none;
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Button */
+
+#new-dog-button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: #222;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#new-dog-button:hover {
+    opacity: 0.8;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .dog-section {
+        width: 92%;
+        margin: 30px auto;
+    }
+
+    .dog-card {
+        padding: 15px;
+    }
+
+    .image-container {
+        min-height: 300px;
+    }
+
+    #dog-image {
+        height: 300px;
+    }
+
+    #new-dog-button {
+        width: 100%;
+    }
+}
